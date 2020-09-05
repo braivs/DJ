@@ -24,7 +24,7 @@ body {
       text-shadow: 5px 5px 15px violet; }
   body .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 33.33%);
     grid-auto-rows: auto;
     width: 100%;
     justify-items: center;
@@ -58,12 +58,45 @@ body {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
-    padding: 20px; }
+    padding: 40px 20px 20px 20px; }
     body footer a {
       margin-right: 30px; }
       body footer a img {
         border-radius: 50%; }
       body footer a:hover img {
         box-shadow: 0 0 10px 10px violet; }
+
+@media (max-width: 1790px) {
+  body .main-left iframe {
+    width: 392px;
+    height: 220.5px; }
+  body .main-center-1 img {
+    height: 280px;
+    width: 280px; }
+  body .main-right img {
+    height: 241.5px;
+    width: 241.5px; } }
+
+@media (max-width: 1300px) {
+  body .main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "left left center center" "right right right right"; }
+    body .main-left {
+      grid-area: left; }
+    body .main-center {
+      grid-area: center; }
+    body .main-right {
+      grid-area: right; } }
+
+@media (max-width: 850px) {
+  body .main {
+    grid-template-areas: "left left left left" "center center center center" "right right right right"; }
+    body .main-left {
+      grid-area: left; }
+    body .main-center {
+      grid-area: center; }
+    body .main-right {
+      grid-area: right; } }
 
 /*# sourceMappingURL=style.css.map */

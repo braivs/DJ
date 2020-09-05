@@ -1,1 +1,77 @@
-
+// $screen-sm: 576px
+// $screen-md: 768px
+// $screen-lg: 992px
+// $screen-xl: 1200px
+@media (max-width: 1790px)
+    body
+        header
+            p 
+        .main
+            &-left
+                iframe
+                    width: 560px*0.7
+                    height: 315px*0.7
+            &-center
+                &-1
+                    img
+                        height: 400px*0.7
+                        width: 400px*0.7
+                &-2
+                    p
+            &-right
+                img
+                    height: 345px*0.7
+                    width: 345px*0.7 
+        footer
+            a
+                img
+                &:hover
+                    img
+@media (max-width: 1300px)
+    body
+        header
+            p 
+        .main
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            grid-template-areas: "left left center center" "right right right right"
+            &-left
+                grid-area: left
+                iframe
+            &-center
+                grid-area: center
+                &-1
+                    img
+                &-2
+                    p
+            &-right
+                grid-area: right
+                img
+        footer
+            a
+                img
+                &:hover
+                    img
+@media (max-width: 850px)
+    body
+        header
+            p 
+        .main
+            grid-template-areas: "left left left left" "center center center center" "right right right right"
+            &-left
+                grid-area: left
+                iframe
+            &-center
+                grid-area: center
+                &-1
+                    img
+                &-2
+                    p
+            &-right
+                grid-area: right
+                img
+        footer
+            a
+                img
+                &:hover
+                    img
