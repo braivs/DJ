@@ -249,8 +249,8 @@ body {
     body .main-left {
       grid-area: left; }
       body .main-left iframe {
-        width: 280px;
-        height: 157.5px; }
+        width: 336px;
+        height: 189px; }
     body .main-center {
       grid-area: center; }
       body .main-center-1 img {
